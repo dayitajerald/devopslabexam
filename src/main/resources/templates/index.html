@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+</head>
+<body>
+  
+  <div id="formclass">
+  <h2>Check Product</h2>
+  <form action="#" th:action="@{/checkprod}" method="post">
+    <label for="id">ID:</label><br>
+    <input type="text" id="id" name="id" required><br>
+    <label for="name">NAME:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <br>
+    <input type="submit" value="Check"  id="check" class="btn"><br>
+  </form>
+
+ <a th:href="@{/add}">Click here to add product</a>
+</div>
+</body>
+</html>
